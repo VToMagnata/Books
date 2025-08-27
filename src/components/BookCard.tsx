@@ -1,4 +1,3 @@
-// components/BookCard.tsx
 import axios from "axios";
 import type { Book } from "./Add";
 
@@ -11,7 +10,6 @@ type Props = {
 const BookCard = ({ item, API, setBooks }: Props) => {
   return (
     <div className="relative bg-[#555555] w-[100%] text-white rounded-xl flex flex-col p-2">
-      {/* Botão excluir */}
       <button
         onClick={async () => {
           try {
@@ -31,7 +29,6 @@ const BookCard = ({ item, API, setBooks }: Props) => {
       <h1 className="font-bold">{item.title}</h1>
       <h2 className="italic">{item.author}</h2>
 
-      {/* Marcar como lido */}
       <div className="flex gap-2 items-center">
         <p>{item.lido ? "Lido" : "Não lido"}</p>
         <img

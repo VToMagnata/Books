@@ -1,4 +1,3 @@
-// App.tsx
 import Add from "./components/Add";
 import BookCard from "./components/BookCard";
 import type { Book } from "./components/Add";

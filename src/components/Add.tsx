@@ -1,4 +1,3 @@
-// Add.tsx
 import axios from "axios";
 import { useState } from "react";
 
@@ -52,7 +51,7 @@ const Add = ({ onAddBook }: { onAddBook: (book: Book) => void }) => {
       />
       <select
         className="w-[90%] h-[1.7em] bg-[#555555] shadow-lg rounded-xl outline-none text-center text-white"
-        value={dados.lido ? "true" : "false"} // controla o select
+        value={dados.lido ? "true" : "false"}
         onChange={(e) =>
           setDados({ ...dados, lido: e.target.value === "true" })
         }
